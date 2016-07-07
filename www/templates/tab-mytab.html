@@ -1,14 +1,37 @@
 <ion-view view-title="Test">
 	<ion-content class="padding">
 		<div class="card">
-			<h4>Bonjour {{name}}</h4>
+			<div class="item item-avatar">
+				<img src="img/ionic.png">
 
-			<input ng-model="name" type="text" placeholder="nom">
+				<h2>Bienvenue</h2>
+			</div>
+
+			<div class="item item-body">
+				<h4>Bonjour {{name}}</h4>
+
+				<input ng-model="name" type="text" placeholder="Saisir un nom">
+			</div>
 		</div>
+
 
 		<div class="button-bar">
 			<button class="button button-small button-dark" ng-click="showPopup()">Pop-up perso</button>
 			<button class="button button-small button-primary" ng-click="showConfirm()">Confirmation</button>
 			<button class="button button-small button-positive" ng-click="showAlert()">Alerte</button>
+		</div>
+
+		<div class="card">
+			<div class="item item-divider">
+				Informations Ionic
+			</div>
+			<div class="item item-text-wrap">
+				<p>Plateforme : {{info.platform}}</p>
+
+				<p>Version : {{info.version}}</p>
+			</div>
+			<div class="item item-divider">
+			
+			</div>
 		</div>
 	</ion-content>

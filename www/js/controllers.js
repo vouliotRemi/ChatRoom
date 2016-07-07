@@ -26,13 +26,13 @@ angular.module('starter.controllers', [])
     enableFriends: false
   };
 
-  $scope.list = [
-    { id: 1, title: 'Titre 1'},  
-    { id: 2, title: 'Titre 2'},
-    { id: 3, title: 'Titre 3'},
-    { id: 4, title: 'Titre 4'},
-    { id: 5, title: 'Titre 5'},
-    { id: 6, title: 'Titre 6'}
+    $scope.list = [
+      { id: 1, title: 'Titre', icon: 'ion-speakerphone'},
+      { id: 2, title: 'Titre', icon: 'ion-happy-outline'},
+      { id: 3, title: 'Titre', icon: 'ion-bowtie'},
+      { id: 4, title: 'Titre', icon: 'ion-android-bus'},
+      { id: 5, title: 'Titre', icon: 'ion-social-angular'},
+      { id: 6, title: 'Titre', icon: 'ion-social-freebsd-devil'}
     ];
 
   // define create account view
@@ -107,4 +107,10 @@ angular.module('starter.controllers', [])
        console.log('Merci de ne pas avoir manger ce cône glacé!');
      });
    };
+
+   $scope.info = {
+     platform: ionic.Platform.platform(),
+     version: ionic.Platform.version()
+   };
+   
 });

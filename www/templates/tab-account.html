@@ -1,13 +1,17 @@
 <ion-view view-title="Account">
   <ion-content>
     <ion-list>
-    <ion-toggle  ng-model="settings.enableFriends">
-        Enable Friends
-    </ion-toggle>
+      <ion-item class="item item-icon-left"> <!-- ajout de la définition de l’item -->
+        <i class="icon ion-person-stalker"></i> <!-- ajout de l’icône -->
+        <ion-toggle ng-model="settings.enableFriends">
+            Enable Friends
+        </ion-toggle>
+      </ion-item> <!-- fin de la définition de l’item -->
     </ion-list>
 
     <ion-list>
     	<ion-item ng-repeat="item in list">
+            <i class="icon {{item.icon}}"></i>
 			{{item.title}}
 			{{item.id}}
     	</ion-item>
