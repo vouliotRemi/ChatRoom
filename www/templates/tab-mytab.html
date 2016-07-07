@@ -1,0 +1,14 @@
+<ion-view view-title="Test">
+	<ion-content class="padding">
+		<div class="card">
+			<h4>Bonjour {{name}}</h4>
+
+			<input ng-model="name" type="text" placeholder="nom">
+		</div>
+
+		<div class="button-bar">
+			<button class="button button-small button-dark" ng-click="showPopup()">Pop-up perso</button>
+			<button class="button button-small button-primary" ng-click="showConfirm()">Confirmation</button>
+			<button class="button button-small button-positive" ng-click="showAlert()">Alerte</button>
+		</div>
+	</ion-content>

@@ -1,0 +1,18 @@
+<ion-view view-title="Account">
+  <ion-content>
+    <ion-list>
+    <ion-toggle  ng-model="settings.enableFriends">
+        Enable Friends
+    </ion-toggle>
+    </ion-list>
+
+    <ion-list>
+    	<ion-item ng-repeat="item in list">
+			{{item.title}}
+			{{item.id}}
+    	</ion-item>
+    </ion-list>
+
+    <button class="button button-block button-positive" ng-click="loginModal.show()">Se connecter</button>
+  </ion-content>
+</ion-view>
